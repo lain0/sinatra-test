@@ -1,0 +1,11 @@
+log/
+.session.vim
+.env
+config/deploy/production_old.rb
+config/deploy_old.rb
+# not now:
+app.rb
+views
+helpers.rb
+simpletest.rb
+README.md

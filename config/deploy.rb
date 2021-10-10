@@ -88,6 +88,10 @@ namespace :puma do
   before :start, :make_dirs
 end
 
+# namespase :sidekiq do
+#   desc ''
+# end
+
 namespace :deploy do
   desc 'Make sure local git is in sync with remote.'
   task :check_revision do

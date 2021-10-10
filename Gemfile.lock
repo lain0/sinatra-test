@@ -20,11 +20,18 @@ GEM
     capistrano-rvm (0.1.2)
       capistrano (~> 3.0)
       sshkit (~> 1.2)
+    capistrano-sidekiq (2.0.0)
+      capistrano (>= 3.9.0)
+      capistrano-bundler
+      sidekiq (>= 6.0)
+    capistrano-yarn (2.0.2)
+      capistrano (~> 3.0)
     capistrano3-puma (5.2.0)
       capistrano (~> 3.7)
       capistrano-bundler
       puma (>= 4.0, < 6.0)
     concurrent-ruby (1.1.9)
+    connection_pool (2.2.5)
     dotenv (2.7.6)
     dry-initializer (3.0.4)
     ed25519 (1.2.4)
@@ -47,10 +54,15 @@ GEM
     rack-protection (2.1.0)
       rack
     rake (13.0.6)
+    redis (4.4.0)
     ruby-next-core (0.12.0)
     ruby2_keywords (0.0.5)
     rvm-capistrano (1.5.0)
       capistrano (>= 2.15.4)
+    sidekiq (6.2.2)
+      connection_pool (>= 2.2.2)
+      rack (~> 2.0)
+      redis (>= 4.2.0)
     sinatra (2.1.0)
       mustermann (~> 1.0)
       rack (~> 2.2)
@@ -80,6 +92,8 @@ DEPENDENCIES
   capistrano (~> 3.16)
   capistrano-bundler
   capistrano-rvm
+  capistrano-sidekiq
+  capistrano-yarn
   capistrano3-puma
   dotenv
   ed25519 (>= 1.2, < 2.0)
@@ -88,6 +102,7 @@ DEPENDENCIES
   prometheus-client
   puma
   rvm-capistrano
+  sidekiq
   sinatra
   yabeda-puma-plugin
 

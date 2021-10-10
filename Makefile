@@ -11,3 +11,6 @@ install-puma-config:
 
 install-puma-systemd:
 	cap production puma:systemd:config puma:systemd:enable
+
+install-sidekiq:
+	cap production sidekiq:install sidekiq:start

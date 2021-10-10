@@ -14,6 +14,7 @@ gem 'prometheus-client'
 gem 'puma'
 # gem 'rack-test'
 gem 'sinatra'
+gem 'sidekiq'
 
 # gem 'yabeda-http_requests'
 # gem 'yabeda-prometheus'
@@ -24,5 +25,7 @@ group :development do
   gem 'capistrano3-puma',   require: false
   gem 'capistrano-bundler', require: false
   gem 'capistrano-rvm',     require: false
+  gem 'capistrano-sidekiq', require: false
+  gem 'capistrano-yarn', require: false
   gem 'rvm-capistrano',     require: false
 end
